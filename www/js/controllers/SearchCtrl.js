@@ -37,6 +37,7 @@ function( $scope,   $ionicLoading,   SoundCloudQuery,   $ionicModal,   $moment ,
 	 * @return {[type]}    [description]
 	 */
 	$scope.search = function(so){
+		console.log(so);
 		KeyboardService.hide();
 		$ionicLoading.show();
 	  query =  SoundCloudQuery.query({q:so.query});
@@ -52,6 +53,7 @@ function( $scope,   $ionicLoading,   SoundCloudQuery,   $ionicModal,   $moment ,
 	 */
 	$scope.loadMore = function(){	
 		return query.getNextPage().then(function(results){
+			console.log(results);
 			$scope.results = $scope.results ? $scope.results.concat(results) : results;
 			return results;
 		});  

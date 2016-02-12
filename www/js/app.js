@@ -39,6 +39,15 @@ angular.module('ionicSound', ['ionic','angular-momentjs','ngCordova', 'plangular
       }
     }
   })
+  .state('app.my_playlist', {
+    url: "/my_playlist",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/my_playlist.html",
+        controller: 'MyPlaylistCtrl'
+      }
+    }
+  })
   .state('app.browse', {
     url: "/browse/:tag",
     views: {

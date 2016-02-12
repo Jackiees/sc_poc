@@ -18,7 +18,8 @@ function( $http,   $q , $log){
 	 * @todo this needs so be set on config
 	 */
 	function getClientId(){
-		return 'a3c640eb93a579e2fb97438a287aff52';
+		// return 'a3c640eb93a579e2fb97438a287aff52';
+    return 'b80d3102f512d040b46a881dacbb2526'; 
 	}
 
 
